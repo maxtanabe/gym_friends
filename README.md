@@ -42,6 +42,8 @@ imageはActiveStorage的なの使う。
 
 ･FavGyms table
 
+|    Column    |    Type   |      Option      |
+| ------------ | --------- | ---------------- |
 | user_id      | bigint    | primary key, AI  |
 | fav_gym_id   | bigint    | NOT NULL         |
 | created      | datetime  | NOT NULL         |
@@ -50,6 +52,8 @@ imageはActiveStorage的なの使う。
 
 ・orders table
 
+|    Column    |    Type   |      Option      |
+| ------------ | --------- | ---------------- |
 | id           | bigint    | primary key, AI  |
 | name         | text      | NOT NULL         |
 | name_hiragana| text      | NOT NULL         |
@@ -57,3 +61,4 @@ imageはActiveStorage的なの使う。
 | phone        | text      | NOT NULL         |
 | created      | datetime  | NOT NULL         |
 | modified     | datetime  | NOT NULL         |
+
