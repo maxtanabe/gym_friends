@@ -23,7 +23,7 @@
 
 <body class="login-page sidebar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="400">
     <div class="container">
       <div class="navbar-translate">
           <a class="nav-link" href="/">
@@ -35,7 +35,7 @@
           <span class="navbar-toggler-bar bottom-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+      <div class="collapse navbar-collapse justify-content-end" data-nav-image="/assets/img/blurred-image-1.jpg">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="/">
@@ -74,7 +74,7 @@
                       <i class="fas fa-key"></i>
                     </span>
                   </div>
-                  <input type="text" placeholder="Password" class="form-control" />
+                  <input type="text" placeholder="Password" class="form-control">
                 </div>
                 <div class="card-footer text-center">
                   <a href="/" class="btn btn-primary btn-round btn-lg btn-block">LOG IN</a>
@@ -95,10 +95,10 @@
                 <a href="/" class="btn btn-neutral btn-twitter btn-round btn-lg btn-block">
                   <i class="fab fa-twitter"></i>&nbsp;Continue with Twitter
                 </a>
-                <a href="/" class="btn btn-neutral btn-facebook btn-round btn-lg btn-block" style="white-space:nowrap">
+                <a href="/" class="btn btn-neutral btn-facebook btn-round btn-lg btn-block" style="white-space:nowrap;">
                   <i class="fab fa-facebook"></i>&nbsp;Continue with Facebook
                 </a>
-                <a href="/" class="btn btn-neutral btn-instagram btn-round btn-lg btn-block" style="white-space:nowrap">
+                <a href="/" class="btn btn-neutral btn-instagram btn-round btn-lg btn-block" style="white-space:nowrap;">
                   <i class="fab fa-instagram"></i>&nbsp;Continue with Instagram
                 </a>
                 <a href="/" class="btn btn-neutral btn-google btn-round btn-lg btn-block">
@@ -111,17 +111,17 @@
       </div>
     </div>
     <footer class="footer">
-      <div class=" container ">
+      <div class="container">
         <nav>
           <ul>
             <li>
-              <a href="http://presentation.creative-tim.com">
+              <a href="/">
                 ABOUT US
               </a>
             </li>
           </ul>
         </nav>
-        <div class="copyright" id="copyright">
+        <div class="copyright float-right">
           &copy;
           <script>
             document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
