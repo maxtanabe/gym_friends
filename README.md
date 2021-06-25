@@ -7,6 +7,7 @@
 | id           | bigint    | primary key, AI  |
 | password     | text      | NOT NULL         |
 | nickname     | text      | NOT NULL         |
+<<<<<<< HEAD
 | name         | text      | NOT NULL         |
 | name_hiragana| text      | NOT NULL         |
 | mail         | text      | NOT NULL         |
@@ -62,3 +63,9 @@ imageはActiveStorage的なの使う。
 | created      | datetime  | NOT NULL         |
 | modified     | datetime  | NOT NULL         |
 
+=======
+| created      | datetime  | NOT NULL         |
+| modified     | datetime  | NOT NULL         |
+
+imageはActiveStorage的なの使う。
+>>>>>>> new_test
