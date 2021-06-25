@@ -18,7 +18,7 @@
   <link href="/assets/css/now-ui-kit.css?v=1.3.0" rel="stylesheet" />
   <link href="/assets/css/style.css?v=1.3.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="/assets/demo/demo.css" rel="stylesheet" />
+  <link href="/assets/css/all.css" rel="stylesheet" />
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -76,16 +76,15 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/coxcoa2" target="_blank">
-              <i class="fab fa-twitter"></i>
-              <p class="d-lg-none d-xl-none">Twitter</p>
+            <a class="nav-link" href="javascript:void(0);" onclick="javascript:$('.forms').hide();$('#comment').fadeToggle();">
+              <i class="far fa-comment-dots fa-2x"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/coxcoa" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <p class="d-lg-none d-xl-none">Instagram</p>
-            </a>
+          <li id="comment" class="forms" style="display:none;color:black;">
+            <div class="input-group">
+              <input type="text" class="form-control" maxlength="10" style="border: 1px solid white;">
+                <button type="button" href="/" class="clear-decoration" style="border: 1px solid white;color:white;"><i class="far fa-paper-plane"></i></button>
+            </div>
           </li>
         </ul>
       </div>
@@ -112,12 +111,17 @@
         <div class="photo-container">
           <img src="/assets/img/julie.jpg" alt="Thumbnail Image" class="rounded-circle img-raised" style="width:15%;">
         </div>
-        <h3 class="title"></h3>
+        <h3 class="title">Nickname</h3>
         <p class="category">Anytime瑞穂通店</p>
         <div class="content">
           <div class="social-description">
             <h7>ジムフレ</h7>
             <p>100</p>
+            <div class="talk float-right">
+              <div class="talk_left">
+                <p>今、瑞穂店にいます！</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -177,8 +181,10 @@
                     <img src="/assets/img/julie.jpg" alt="Thumbnail Image" class="rounded-circle img-raised" style="width:40px;height:40px;">
                     Nickname
                   </a>
-                  <div class="float-center mt-2 ml-2">
-                    <i class="fas fa-bezier-curve"></i>&nbsp;<br>Active
+                  <div class="talk mt-2">
+                    <div class="talk_left">
+                      <p>今、瑞穂店にいます！</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -197,7 +203,11 @@
                     テストGYM
                   </a>
                   <div class="float-center mt-2 ml-2">
-                    <i class="fas fa-bezier-curve"></i>&nbsp;<br>５ in the gym
+                    <div class="talk">
+                      <div class="talk_left">
+                        <p>今、5名トレ中です！</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -288,6 +298,9 @@
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="/assets/js/now-ui-kit.js?v=1.3.0" type="text/javascript"></script>
+  <script>
+  $('#continuous-tip').tooltip('show');
+  </script>
 
 </body>
 
